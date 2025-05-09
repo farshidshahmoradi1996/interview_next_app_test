@@ -1,0 +1,27 @@
+@use "./settings/mixins";
+@use "./settings/vars";
+
+body {
+  font-family: iranyekan !important;
+  background-color: vars.$body-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: iranyekan !important;
+}
+h1 {
+  font-weight: bold;
+}
+
+.body-scroll-lock {
+  overflow-y: hidden !important;
+  touch-action: none;
+  -ms-touch-action: none;
+}

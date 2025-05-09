@@ -1,0 +1,7 @@
+@use "@/styles/settings/vars";
+
+.emptyListContainer {
+  margin-top: vars.$xl;
+  color: vars.$gray-6;
+  text-align: center;
+}

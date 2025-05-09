@@ -1,0 +1,26 @@
+@use "@/styles/settings/vars";
+
+.container {
+  top: 0;
+  position: sticky;
+
+  background: vars.$white;
+  box-shadow: vars.$shadow-lg;
+  display: flex;
+  padding: vars.$lg;
+
+  align-items: center;
+  input {
+    padding: vars.$sm vars.$lg;
+    width: 100%;
+    outline: none;
+
+    border: 1px solid vars.$gray-3;
+    border-radius: vars.$sm;
+    transition: all 300ms ease-in;
+    &:focus {
+      border-color: vars.$gray-4;
+      box-shadow: vars.$shadow-lg;
+    }
+  }
+}

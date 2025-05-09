@@ -1,0 +1,9 @@
+@use "@/styles/settings/vars";
+
+.button {
+  width: 100%;
+  min-height: 40px;
+  border-radius: vars.$xs;
+  background: vars.$gray-2;
+  color: vars.$gray-8;
+}

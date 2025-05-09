@@ -1,0 +1,18 @@
+.container {
+  background: #fff;
+  height: 500px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  animation: toUpModal 500ms;
+}
+
+@keyframes toUpModal {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

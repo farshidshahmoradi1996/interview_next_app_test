@@ -1,0 +1,17 @@
+.fade-in {
+  animation: fadeIn ease 600ms;
+  -webkit-animation: fadeIn ease 600ms;
+  -moz-animation: fadeIn ease 600ms;
+  -o-animation: fadeIn ease 600ms;
+  -ms-animation: fadeIn ease 600ms;
+}
+
+/* fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

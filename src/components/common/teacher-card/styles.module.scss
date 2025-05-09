@@ -1,0 +1,70 @@
+@use "@/styles/settings/mixins";
+@use "@/styles/settings/vars";
+
+.card {
+  border-radius: vars.$xs;
+  background-color: vars.$white;
+  border: 1px solid vars.$gray-2;
+  padding: vars.$lg;
+  margin: vars.$sm;
+  box-shadow: vars.$shadow-lg;
+  height: 240px;
+  transition: all 200ms ease-in;
+  @include mixins.responsive("medium") {
+    width: 600px;
+    margin: vars.$sm auto;
+  }
+  &:hover {
+    border-color: vars.$primary;
+    box-shadow: vars.$shadow;
+  }
+  .titleContainer {
+    margin-right: vars.$sm;
+    h3 {
+      @include mixins.title;
+    }
+    p {
+      color: vars.$gray-5;
+      margin-top: vars.$xs;
+      font-size: vars.$font-sm;
+    }
+  }
+
+  .imgContainer {
+    display: flex;
+    align-items: center;
+    img.avatar {
+      border-radius: 999px;
+      border: 2px solid vars.$white;
+      box-shadow: 0 0 0 3px vars.$primary;
+    }
+  }
+  button {
+    margin-top: vars.$md;
+  }
+
+  .tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: vars.$sm;
+    .item {
+      border-radius: vars.$sm;
+      padding: vars.$xs;
+      margin: vars.$xss;
+
+      background-color: vars.$gray-3;
+      color: vars.$gray-6;
+      font-size: vars.$font-xs;
+    }
+  }
+}
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: vars.$sm;
+}
+.videoClose {
+  margin: vars.$sm;
+}
